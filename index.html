@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>Account details form</title>
+
+        <!-- Bootstrap Core CSS -->
+        <link href="css/bootstrap.css" rel="stylesheet">
+
+        <!--Custom CSS-->
+        <link href="css/style.css" rel="stylesheet">
+
+        <!-- jQuery -->
+        <script src="js/jquery.js"></script>
+
+        <!-- Bootstrap Core JavaScript -->
+        <script src="js/bootstrap.min.js"></script>
+
+  </head>
+
+  <body>
+      <h2 style="text-align:center; padding-top:20px;"> Enter your account details here </h2>
+
+      <form class="formText" action="http://192.168.1.105:1880/in">
+          <div-class="control-group">
+           <label-class="control-label" for="textinput">Full name</label>
+           <div-class="controls" style="padding: 0px 0px 0px 75px;">
+                <input class="inputFields" type="text" name="firstname" value="Enter name here">
+            </div>
+          </div>
+
+          <br><br>
+
+          <div-class="control-group">
+            <label-class="control-label" for="radio-inline">Sex: </label>
+            <div-class="controls" style="padding: 0px 0px 0px 160px;">
+              <label class="radio-inline" for="radios-0">
+                <input class="inputFields" type="radio" name="sex" id="radios-0" value="M"> M
+              </label>
+              <label class="radio-inline" for="radios-1">
+                <input type="radio" name="sex" id="radios-1" value="F">  F
+              </label>
+            </div>
+          </div>
+
+          <br><br>
+
+          <div class="control-group">
+            <label-class="control-label" for="textinput">Account Number</label>
+            <div-class="controls">
+                    <input class="inputFields" type="text" name="accountnumber" value="######">
+            </div>
+          </div>
+
+          <br><br>
+
+          <div class="control-group">
+            <label-class="control-label" for="textinput">Member Since</label>
+            <div-class="controls" style="padding: 0px 0px 0px 28px;">
+                <input class="inputFields" type="text" name="membersince" value="mm-dd-yyyy">
+            </div>
+          </div>
+
+      </form>
+
+      <div>
+        <br><br>
+        <input class="button" type="submit" value="Submit">
+      </div>
+
+  </body>
+</html>
